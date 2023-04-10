@@ -61,3 +61,36 @@
     border-radius: 3px;
     color: #333;
   }
+  .name:focus,
+.dob:focus {
+  -webkit-box-shadow: 0 0 2px 1px #2a2c27;
+  -moz-box-shadow: 0 0 2px 1px #2a2c27;
+  box-shadow: 0 0 2px 1px #2a2c27;
+  border: 1px solid #2a2c27;
+}
+
+.input-box .icon {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  color: #333;
+  background-color: #f1f1f1;
+  border-radius: 2px 0 0 2px;
+  transition: 0.3s;
+  font-size: 20px;
+  pointer-events: none;
+  border: 1px solid #00000033;
+  border-right: none;
+}
+
+.name:focus+.icon {
+  background-color: #2a2c27;
+  border-right: 1px solid #2a2c27;
+  border: none;
+  transition: 1s;
+}
