@@ -28,3 +28,33 @@
     margin-right: auto;
     margin-top: 10px;
 }
+
+.IconDiv{
+    padding: 10px;
+    height: 120px;
+    width: 120px;
+}
+
+.IconIMG{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.IconText{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.SlideIMG{
+    height: 600px;
+}
+
+.CardRow{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
