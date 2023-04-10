@@ -124,3 +124,51 @@
     border-bottom-left-radius: 3px;
     border-right: none;
   }
+  .input-box label:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .radio:checked+label {
+    background-color: #2a2c27;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  .input-box select {
+    display: inline-block;
+    width: 50%;
+    padding: 12px;
+    background-color: #fcfcfc;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .input-box select:focus {
+    background-color: #2a2c27;
+    color: #fff;
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    background: #2a2c27;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: black;
+  
+  }
