@@ -17,7 +17,11 @@
 }
 
 .NavName{
-    margin-left: 120px;
+    margin-left: 100px;
+}
+
+.NavName:hover{
+   cursor: pointer;
 }
 
 .Icons{
