@@ -7,8 +7,7 @@
     <title>product cart</title>
     <style>
         .product-cart-container{
-            width: 500px;
-             border: 1px solid gray;
+              border: 1px solid gray;
             background-color: white;
             display: block;
             margin: 10px 10px;
@@ -59,132 +58,330 @@
             font-size: 15px;
         }
         .main-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 10px 30px;
-            margin-left: 5px;
+          display: flex;
+        flex-direction: row;
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+          gap: 35px;
+          padding-top: 30px;
+          margin-left:0px;
            
+         }
+         .main-container-1{
+          display: flex;
+        flex-direction: row;
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+          gap: 35px;
+          padding-top: 30px;
+          margin-left:0px;
+         }
+
+         .TableLampContainer-heading
+         {
+          background-color: burlywood;
+          color: white;
+          height: 40px;
+          width: 150px;
+          border-radius: 10px;
+          text-align: center;
+          padding: 10px;
+           font-family:Arial, Helvetica, sans-serif;
+          font-size :22px;
+          
+         }
+         .price{
+          text-align: center;
+         }
+         .product-quantity
+         {
+          font-weight: bold;
+
          }
 
     </style>
 </head>
 <body>
-    <div class="main-container">
+  <div class="TableLampContainer">
+  <h1 class="TableLampContainer-heading">Table Lamps:</h1>
+  <!--First contaier-->
+    <div class="main-container"> 
         <div class="product-cart-container">
             <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0846_1000x.jpg?v=1678605817" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Crystal Table Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec()">-</button>
-                <span id="product-quantity">1</span>
+                <span id="product-quantity" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
         <div class="product-cart-container">
             <img src=" https://cdn.shopify.com/s/files/1/0962/2574/products/009A4010_1000x.jpg?v=1678605314" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Shelby Fenton Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick=" dec1()">-</button>
-                <span id="product-quantity-1">1</span>
+                <span id="product-quantity-1" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc1()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
     
         <div class="product-cart-container">
             <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A0356_8c2fb7e2-4eb4-4a52-8c68-cff1b19ca3a1.jpg?v=1680953832&height=640" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Daylesfored Table Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec2()">-</button>
-                <span id="product-quantity-2">1</span>
+                <span id="product-quantity-2" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc2()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
     
         <div class="product-cart-container">
-            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0842.jpg?v=1678605817&height=640" class="product-cart-header-img"/>
+            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A2548_1000x.jpg?v=1680974768" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Straffordshire Table Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec3()">-</button>
-                <span id="product-quantity-3">1</span>
+                <span id="product-quantity-3" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc3()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
+    </div>
+    <div class="main-container"> 
         <div class="product-cart-container"> 
             <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A7143_1000x.jpg?v=1680953816" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Blath Table Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec4()">-</button>
-                <span id="product-quantity-4">1</span>
+                <span id="product-quantity-4" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc4()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
         <div class="product-cart-container">
             <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_0059_9d2e3812-a35e-45c0-97ad-a2d16c2bda95.jpg?v=1680954294&height=640" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title"> Ceramic Table Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick=" dec5()">-</button>
-                <span id="product-quantity-5">1</span>
+                <span id="product-quantity-5" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc5()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
     
         <div class="product-cart-container">
             <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4096.jpg?v=1678605490&height=640" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Blossom - Tiffany Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec6()">-</button>
-                <span id="product-quantity-6">1</span>
+                <span id="product-quantity-6" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc6()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
     
         <div class="product-cart-container">
             <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_1972_980x.jpg?v=1680953563" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Buffet Table Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec7()">-</button>
-                <span id="product-quantity-7">1</span>
+                <span id="product-quantity-7" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc7()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
-        
+      </div>
+       <!--Second Container-->
+    <div class="main-container-1"> 
         <div class="product-cart-container">
-            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_5911_1f7dcfea-32f6-454a-8077-f3f84561949d_1000x.jpg?v=1677235725" class="product-cart-header-img"/>
+            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_5896_354a060f-c5b7-421f-b46d-ac6a0d01b3f1_1000x.jpg?v=1678605373" class="product-cart-header-img"/>
     
-            <h2 class="product-cart-title">Elephant</h2>
+            <h2 class="product-cart-title">Capodimonte Figurine Lamp</h2>
             <div class="product-cart-quantity-container">
                 <button class="product-cart-quantity-btn" onclick="dec8()">-</button>
-                <span id="product-quantity-8">1</span>
+                <span id="product-quantity-8" class="product-quantity">1</span>
                 <button class="product-cart-quantity-btn" onclick="inc8()">+</button>
             </div>
-    
+            <h4 class="price">9,999 Rs</h4>
+
             <button class="product-cart-add-to-cart-btn">Add to cart</button>
         </div>
+    
+
+      <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0846_1000x.jpg?v=1678605817" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Crystal Table Lamp</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec9()">-</button>
+              <span id="product-quantity-9" class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc9()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+      <div class="product-cart-container">
+          <img src=" https://cdn.shopify.com/s/files/1/0962/2574/products/009A4010_1000x.jpg?v=1678605314" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick=" dec10()">-</button>
+              <span id="product-quantity-10"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc10()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+  
+      <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A0356_8c2fb7e2-4eb4-4a52-8c68-cff1b19ca3a1.jpg?v=1680953832&height=640" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec11()">-</button>
+              <span id="product-quantity-11"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc11()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+  </div>
+  <div class="main-container-1"> 
+        <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0842.jpg?v=1678605817&height=640" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec12()">-</button>
+              <span id="product-quantity-12"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc12()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+    
+     
+      <div class="product-cart-container"> 
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A7143_1000x.jpg?v=1680953816" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec13()">-</button>
+              <span id="product-quantity-13"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc13()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+      <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_0059_9d2e3812-a35e-45c0-97ad-a2d16c2bda95.jpg?v=1680954294&height=640" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">  Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick=" dec14()">-</button>
+              <span id="product-quantity-14"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc14()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+  
+  <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4096.jpg?v=1678605490&height=640" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec15()">-</button>
+              <span id="product-quantity-15"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc15()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+  </div>
+  <div class="main-container-1"> 
+  
+      <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_1972_980x.jpg?v=1680953563" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec16()">-</button>
+              <span id="product-quantity-16" class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc16()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+      
+      <div class="product-cart-container">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_5911_1f7dcfea-32f6-454a-8077-f3f84561949d_1000x.jpg?v=1677235725" class="product-cart-header-img"/>
+  
+          <h2 class="product-cart-title">Elephant</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec17()">-</button>
+              <span id="product-quantity-17"  class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc17()">+</button>
+          </div>
+  
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+      <div class="product-cart-container">
+        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_1972_980x.jpg?v=1680953563" class="product-cart-header-img"/>
+
+        <h2 class="product-cart-title">Elephant</h2>
+        <div class="product-cart-quantity-container">
+            <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
+            <span id="product-quantity-18" class="product-quantity">1</span>
+            <button class="product-cart-quantity-btn" onclick="inc18()">+</button>
+        </div>
+
+        <button class="product-cart-add-to-cart-btn">Add to cart</button>
     </div>
+    
+    <div class="product-cart-container">
+        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_5911_1f7dcfea-32f6-454a-8077-f3f84561949d_1000x.jpg?v=1677235725" class="product-cart-header-img"/>
+
+        <h2 class="product-cart-title">Elephant</h2>
+        <div class="product-cart-quantity-container">
+            <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
+            <span id="product-quantity-19"  class="product-quantity">1</span>
+            <button class="product-cart-quantity-btn" onclick="inc19()">+</button>
+        </div>
+
+        <button class="product-cart-add-to-cart-btn">Add to cart</button>
+    </div>
+  </div>
+  
     <script type="text/javascript">
         function inc()
         {
@@ -403,6 +600,272 @@
             qntElement.innerHTML = qnt - 1;
         }
         }
+        function inc9()
+        {
+          const qntElement = document.getElementById("product-quantity-9");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec9()
+        {
+          const qntElement = document.getElementById("product-quantity-9");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+          
+        function inc10()
+        {
+          const qntElement = document.getElementById("product-quantity-10");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec10()
+        {
+          const qntElement = document.getElementById("product-quantity-10");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc11()
+        {
+          const qntElement = document.getElementById("product-quantity-11");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec11()
+        {
+          const qntElement = document.getElementById("product-quantity-11");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc12()
+        {
+          const qntElement = document.getElementById("product-quantity-12");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec12()
+        {
+          const qntElement = document.getElementById("product-quantity-12");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc13()
+        {
+          const qntElement = document.getElementById("product-quantity-13");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec13()
+        {
+          const qntElement = document.getElementById("product-quantity-13");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc14()
+        {
+          const qntElement = document.getElementById("product-quantity-14");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function de14()
+        {
+          const qntElement = document.getElementById("product-quantity-14");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc15()
+        {
+          const qntElement = document.getElementById("product-quantity-15");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec15()
+        {
+          const qntElement = document.getElementById("product-quantity-15");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc16()
+        {
+          const qntElement = document.getElementById("product-quantity-16");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec16()
+        {
+          const qntElement = document.getElementById("product-quantity-16");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc17()
+        {
+          const qntElement = document.getElementById("product-quantity-17");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec17()
+        {
+          const qntElement = document.getElementById("product-quantity-17");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc18()
+        {
+          const qntElement = document.getElementById("product-quantity-18");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec18()
+        {
+          const qntElement = document.getElementById("product-quantity-18");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+        }
+        function inc19()
+        {
+          const qntElement = document.getElementById("product-quantity-19");
+          const qnt = parseInt(qntElement.innerHTML);
+          if (qnt==5)
+          { 
+            alert('you can add upto 5 products')
+          }
+          else{
+            qntElement.innerHTML = qnt+1;
+          }
+        
+        }
+        function dec19()
+        {
+          const qntElement = document.getElementById("product-quantity-19");
+          const qnt = parseInt(qntElement.innerHTML);
+          if(qnt==1){
+            alert('Minimum quantity can be 1');
+          }
+          else{
+            qntElement.innerHTML = qnt - 1;
+        }
+      }
+
         
     </script> 
 
