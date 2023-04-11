@@ -180,7 +180,19 @@
   .services{
     display: block;
   }
-  .support{
-    margin-left: 15px;
-    float: left;
+  .background-color{
+    background-color: #d19976;
+  }
+  .color{
+    color: black;
+  }
+  .center{
+    margin-left: 100px;
+  }
+  .width{
+    width: 100%;
+    display: block;
+  }
+  .img-size{
+    height: 30px;
   }
