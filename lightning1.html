@@ -1,110 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product cart</title>
-    <style>
-        .product-cart-container{
-              border: 1px solid gray;
-            background-color: white;
-            display: block;
-            margin: 10px 10px;
-            border-radius: 15px;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product cart</title>
+  <style>
+    .product-cart-container {
+      border: 1px solid gray;
+      background-color: white;
+      display: block;
+      margin: 10px 10px;
+      border-radius: 15px;
 
-        }
-        body{
-            background-color: antiquewhite;
-        }
-        .product-cart-title{
-            text-align: center;
-            font-size: 10px;
-        }
-      .product-cart-add-to-cart-btn{
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-            border: 1px solid black;
-            padding: 3px 6px;
-            background-color: #843495;
-            color: white;
-         }
-         .product-cart-quantity-container{
-            display: flex;
-            justify-content: space-around;
-        }
-        .product-cart-quantity-btn{
-            border-radius: 50%;
-            height: 25px;
-            width: 25px;
-            background-color: #843495;
-            border: none;
-            color: white;
-            padding:3px;
-            margin: auto;
+    }
 
-        }
-        .product-cart-header-img{
-            display: block;
-            width: 250px;
-            height: 250px;
-            margin:10px;
-            border-radius:20px ;
-            box-shadow: 0 0  3px 2px gray;
-        }
-        .product-cart-title{
-            text-align: center;
-            font-size: 15px;
-        }
-        .main-container{
-          display: flex;
-        flex-direction: row;
-        justify-content: start;
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-          gap: 35px;
-          padding-top: 30px;
-          margin-left:0px;
-           
-         }
-         .main-container-1{
-          display: flex;
-        flex-direction: row;
-        justify-content: start;
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-          gap: 35px;
-          padding-top: 30px;
-          margin-left:0px;
-         }
 
-         .TableLampContainer-heading
-         {
-          background-color: burlywood;
-          color: white;
-          height: 40px;
-          width: 150px;
-          border-radius: 10px;
-          text-align: center;
-          padding: 10px;
-           font-family:Arial, Helvetica, sans-serif;
-          font-size :22px;
-          
-         }
-         .price{
-          text-align: center;
-         }
-         .product-quantity
-         {
-          font-weight: bold;
+    body {
+      background-color: antiquewhite;
+    }
 
-         }
+    .product-cart-title {
+      text-align: center;
+      font-size: 10px;
+    }
 
-    </style>
+    .product-cart-add-to-cart-btn {
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+      border: 1px solid black;
+      padding: 3px 6px;
+      background-color: #843495;
+      color: white;
+    }
+
+    .product-cart-quantity-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .product-cart-quantity-btn {
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      background-color: #843495;
+      border: none;
+      color: white;
+      padding: 3px;
+      margin: auto;
+
+    }
+
+    .product-cart-header-img {
+      display: block;
+      width: 250px;
+      height: 250px;
+      margin: 10px;
+      border-radius: 20px;
+      box-shadow: 0 0 3px 2px gray;
+    }
+
+    .product-cart-title {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 35px;
+      padding-top: 30px;
+      margin-left: 0px;
+
+    }
+
+    .main-container-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 35px;
+      padding-top: 30px;
+      margin-left: 0px;
+    }
+
+    .TableLampContainer-heading {
+      background-color: burlywood;
+      color: white;
+      height: 40px;
+      width: 150px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+
+    }
+
+    .price {
+      text-align: center;
+    }
+
+    .product-quantity {
+      font-weight: bold;
+
+    }
+  </style>
 </head>
+
 <body>
   <div class="TableLampContainer">
   <h1 class="TableLampContainer-heading">Table Lamps:</h1>
@@ -367,519 +378,462 @@
       <div class="product-cart-container">
         <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_1972_980x.jpg?v=1680953563" class="product-cart-header-img"/>
 
-        <h2 class="product-cart-title">Elephant</h2>
-        <div class="product-cart-quantity-container">
-            <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
-            <span id="product-quantity-18" class="product-quantity">1</span>
-            <button class="product-cart-quantity-btn" onclick="inc18()">+</button>
-        </div>
-        <h4 class="price">13,399 Rs</h4>
-
-        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-    </div>
-    
-    <div class="product-cart-container">
-        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_5911_1f7dcfea-32f6-454a-8077-f3f84561949d_1000x.jpg?v=1677235725" class="product-cart-header-img"/>
+ 
 
         <h2 class="product-cart-title">Elephant</h2>
         <div class="product-cart-quantity-container">
-            <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
-            <span id="product-quantity-19"  class="product-quantity">1</span>
-            <button class="product-cart-quantity-btn" onclick="inc19()">+</button>
+          <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
+          <span id="product-quantity-18" class="product-quantity">1</span>
+          <button class="product-cart-quantity-btn" onclick="inc18()">+</button>
         </div>
-        <h4 class="price">12,999 Rs</h4>
 
         <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+
+      <div class="product-cart-container">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_5911_1f7dcfea-32f6-454a-8077-f3f84561949d_1000x.jpg?v=1677235725"
+          class="product-cart-header-img" />
+
+        <h2 class="product-cart-title">Elephant</h2>
+        <div class="product-cart-quantity-container">
+          <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
+          <span id="product-quantity-19" class="product-quantity">1</span>
+          <button class="product-cart-quantity-btn" onclick="inc19()">+</button>
+        </div>
+
+        <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
     </div>
-  </div>
-  
+
     <script type="text/javascript">
-        function inc()
-        {
-          const qntElement = document.getElementById("product-quantity");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
+      function inc() {
+        const qntElement = document.getElementById("product-quantity");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
         }
-        function dec()
-        {
-          const qntElement = document.getElementById("product-quantity");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
+        else {
+          qntElement.innerHTML = qnt + 1;
         }
+
+      }
+      function dec() {
+        const qntElement = document.getElementById("product-quantity");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
         }
-          
-        function inc1()
-        {
-          const qntElement = document.getElementById("product-quantity-1");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec1()
-        {
-          const qntElement = document.getElementById("product-quantity-1");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc2()
-        {
-          const qntElement = document.getElementById("product-quantity-2");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec2()
-        {
-          const qntElement = document.getElementById("product-quantity-2");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc3()
-        {
-          const qntElement = document.getElementById("product-quantity-3");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec3()
-        {
-          const qntElement = document.getElementById("product-quantity-3");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc4()
-        {
-          const qntElement = document.getElementById("product-quantity-4");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec4()
-        {
-          const qntElement = document.getElementById("product-quantity-4");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc5()
-        {
-          const qntElement = document.getElementById("product-quantity-5");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec5()
-        {
-          const qntElement = document.getElementById("product-quantity-5");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc6()
-        {
-          const qntElement = document.getElementById("product-quantity-6");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec6()
-        {
-          const qntElement = document.getElementById("product-quantity-6");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc7()
-        {
-          const qntElement = document.getElementById("product-quantity-7");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec7()
-        {
-          const qntElement = document.getElementById("product-quantity-7");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc8()
-        {
-          const qntElement = document.getElementById("product-quantity-8");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec8()
-        {
-          const qntElement = document.getElementById("product-quantity-8");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc9()
-        {
-          const qntElement = document.getElementById("product-quantity-9");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec9()
-        {
-          const qntElement = document.getElementById("product-quantity-9");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-          
-        function inc10()
-        {
-          const qntElement = document.getElementById("product-quantity-10");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec10()
-        {
-          const qntElement = document.getElementById("product-quantity-10");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc11()
-        {
-          const qntElement = document.getElementById("product-quantity-11");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec11()
-        {
-          const qntElement = document.getElementById("product-quantity-11");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc12()
-        {
-          const qntElement = document.getElementById("product-quantity-12");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec12()
-        {
-          const qntElement = document.getElementById("product-quantity-12");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc13()
-        {
-          const qntElement = document.getElementById("product-quantity-13");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec13()
-        {
-          const qntElement = document.getElementById("product-quantity-13");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc14()
-        {
-          const qntElement = document.getElementById("product-quantity-14");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function de14()
-        {
-          const qntElement = document.getElementById("product-quantity-14");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc15()
-        {
-          const qntElement = document.getElementById("product-quantity-15");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec15()
-        {
-          const qntElement = document.getElementById("product-quantity-15");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc16()
-        {
-          const qntElement = document.getElementById("product-quantity-16");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec16()
-        {
-          const qntElement = document.getElementById("product-quantity-16");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc17()
-        {
-          const qntElement = document.getElementById("product-quantity-17");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec17()
-        {
-          const qntElement = document.getElementById("product-quantity-17");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc18()
-        {
-          const qntElement = document.getElementById("product-quantity-18");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec18()
-        {
-          const qntElement = document.getElementById("product-quantity-18");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
-        }
-        }
-        function inc19()
-        {
-          const qntElement = document.getElementById("product-quantity-19");
-          const qnt = parseInt(qntElement.innerHTML);
-          if (qnt==5)
-          { 
-            alert('you can add upto 5 products')
-          }
-          else{
-            qntElement.innerHTML = qnt+1;
-          }
-        
-        }
-        function dec19()
-        {
-          const qntElement = document.getElementById("product-quantity-19");
-          const qnt = parseInt(qntElement.innerHTML);
-          if(qnt==1){
-            alert('Minimum quantity can be 1');
-          }
-          else{
-            qntElement.innerHTML = qnt - 1;
+        else {
+          qntElement.innerHTML = qnt - 1;
         }
       }
 
-        
-    </script> 
+      function inc1() {
+        const qntElement = document.getElementById("product-quantity-1");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
 
-   
+      }
+      function dec1() {
+        const qntElement = document.getElementById("product-quantity-1");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc2() {
+        const qntElement = document.getElementById("product-quantity-2");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec2() {
+        const qntElement = document.getElementById("product-quantity-2");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc3() {
+        const qntElement = document.getElementById("product-quantity-3");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec3() {
+        const qntElement = document.getElementById("product-quantity-3");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc4() {
+        const qntElement = document.getElementById("product-quantity-4");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec4() {
+        const qntElement = document.getElementById("product-quantity-4");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc5() {
+        const qntElement = document.getElementById("product-quantity-5");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec5() {
+        const qntElement = document.getElementById("product-quantity-5");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc6() {
+        const qntElement = document.getElementById("product-quantity-6");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec6() {
+        const qntElement = document.getElementById("product-quantity-6");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc7() {
+        const qntElement = document.getElementById("product-quantity-7");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec7() {
+        const qntElement = document.getElementById("product-quantity-7");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc8() {
+        const qntElement = document.getElementById("product-quantity-8");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec8() {
+        const qntElement = document.getElementById("product-quantity-8");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc9() {
+        const qntElement = document.getElementById("product-quantity-9");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec9() {
+        const qntElement = document.getElementById("product-quantity-9");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+
+      function inc10() {
+        const qntElement = document.getElementById("product-quantity-10");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec10() {
+        const qntElement = document.getElementById("product-quantity-10");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc11() {
+        const qntElement = document.getElementById("product-quantity-11");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec11() {
+        const qntElement = document.getElementById("product-quantity-11");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc12() {
+        const qntElement = document.getElementById("product-quantity-12");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec12() {
+        const qntElement = document.getElementById("product-quantity-12");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc13() {
+        const qntElement = document.getElementById("product-quantity-13");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec13() {
+        const qntElement = document.getElementById("product-quantity-13");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc14() {
+        const qntElement = document.getElementById("product-quantity-14");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function de14() {
+        const qntElement = document.getElementById("product-quantity-14");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc15() {
+        const qntElement = document.getElementById("product-quantity-15");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec15() {
+        const qntElement = document.getElementById("product-quantity-15");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc16() {
+        const qntElement = document.getElementById("product-quantity-16");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec16() {
+        const qntElement = document.getElementById("product-quantity-16");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc17() {
+        const qntElement = document.getElementById("product-quantity-17");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec17() {
+        const qntElement = document.getElementById("product-quantity-17");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc18() {
+        const qntElement = document.getElementById("product-quantity-18");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec18() {
+        const qntElement = document.getElementById("product-quantity-18");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+      function inc19() {
+        const qntElement = document.getElementById("product-quantity-19");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 5) {
+          alert('you can add upto 5 products')
+        }
+        else {
+          qntElement.innerHTML = qnt + 1;
+        }
+
+      }
+      function dec19() {
+        const qntElement = document.getElementById("product-quantity-19");
+        const qnt = parseInt(qntElement.innerHTML);
+        if (qnt == 1) {
+          alert('Minimum quantity can be 1');
+        }
+        else {
+          qntElement.innerHTML = qnt - 1;
+        }
+      }
+
+
+    </script>
+
+
 </body>
+
 </html>

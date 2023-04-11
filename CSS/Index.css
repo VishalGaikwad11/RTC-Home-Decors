@@ -17,7 +17,11 @@
 }
 
 .NavName{
-    margin-left: 120px;
+    margin-left: 90px;
+}
+
+.NavName:hover{
+   cursor: pointer;
 }
 
 .Icons{
@@ -145,4 +149,7 @@
     line-height: 200px;
     font-size: 80px;
     color: white;
+  }
+  .gift-img{
+    height: 650px;
   }
