@@ -1,123 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kitchen cart</title>
-    <!--css added-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kitchen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/Index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-    <!--Style -->
-    <style>
-        .product-cart-container {
-            border: 1px solid gray;
-            background-color: white;
-            display: block;
-            margin: 10px 10px;
-            border-radius: 15px;
-        }
-        
-        body {
-            background-color: antiquewhite;
-        }
-        
-        .product-cart-title {
-            text-align: center;
-            font-size: 10px;
-        }
-        
-        .product-cart-add-to-cart-btn {
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-            border: 1px solid black;
-            padding: 3px 6px;
-            background-color: #843495;
-            color: white;
-        }
-        
-        .product-cart-quantity-container {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .product-cart-quantity-btn {
-            border-radius: 50%;
-            height: 25px;
-            width: 25px;
-            background-color: #843495;
-            border: none;
-            color: white;
-            padding: 3px;
-            margin: auto;
-        }
-        
-        .product-cart-header-img {
-            display: block;
-            width: 250px;
-            height: 250px;
-            margin: 10px;
-            border-radius: 20px;
-            box-shadow: 0 0 3px 2px gray;
-        }
-        
-        .product-cart-title {
-            text-align: center;
-            font-size: 15px;
-        }
-        
-        .main-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            gap: 35px;
-            padding-top: 30px;
-            margin-left: 0px;
-        }
-        
-        .main-container-1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            gap: 35px;
-            padding-top: 30px;
-            margin-left: 0px;
-        }
-        
-        .TableLampContainer-heading {
-            background-color: burlywood;
-            color: white;
-            height: 40px;
-            width: 150px;
-            border-radius: 10px;
-            text-align: center;
-            padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 22px;
-        }
-        
-        .price {
-            text-align: center;
-        }
-        
-        .product-quantity {
-            font-weight: bold;
-        }
-    </style>
+</head>
+<!--css added-->
+
+<!--Style -->
+<style>
+    .product-cart-container {
+        border: 1px solid gray;
+        background-color: white;
+        display: block;
+        margin: 10px 10px;
+        border-radius: 15px;
+    }
+    
+    body {
+        background-color: antiquewhite;
+    }
+    
+    .product-cart-title {
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .product-cart-add-to-cart-btn {
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 3px 6px;
+        background-color: #843495;
+        color: white;
+    }
+    
+    .product-cart-quantity-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .product-cart-quantity-btn {
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        background-color: #843495;
+        border: none;
+        color: white;
+        padding: 3px;
+        margin: auto;
+    }
+    
+    .product-cart-header-img {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 3px 2px gray;
+    }
+    
+    .product-cart-title {
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 35px;
+        padding-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .main-container-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 35px;
+        padding-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .TableLampContainer-heading {
+        background-color: burlywood;
+        color: white;
+        height: 70px;
+        width: 150px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+    }
+    
+    .price {
+        text-align: center;
+    }
+    
+    .product-quantity {
+        font-weight: bold;
+    }
+    
+    .IconText {
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+</style>
 </head>
 
 <body>
+
     <!--navbar-->
+    <div class="NavBody">
+        <nav class="navbar navbar-expand-lg NavBG">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Homepage IMG/HDlogo (1).png" width="150" height="60" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse NavItem" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="furniture.html">Furniture</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="kitchen.html">Kitchen</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="lightning1.html">Lightning</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="gift.html">Gift Shop</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="signup.html">Signup</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="contact .html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
 
 
-    <!--nav end-->
+        <!--nav end-->
+        <div class="Icons ">
+            <div class="IconDiv">
+                <a href="#cardrow" style="text-decoration: none; color:black;">
+                    <img src="./images/Homepage IMG/ShopAll.png" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Shop All
+                    </font>
+                </a>
+
+            </div>
+
+            <div class="IconDiv ">
+                <a href="#Furniture" style="text-decoration: none; color:black;">
+                    <img src="./images/furniture img/wooden.jpg" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Wooden
+                    </font>
+                </a>
+            </div>
+
+            <div class="IconDiv  ">
+                <a href="#kitchen" style="text-decoration: none; color:black;">
+                    <img src="./images/furniture img/glass img.jpg" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Glass
+                    </font>
+                </a>
+            </div>
+
+            <div class="IconDiv ">
+                <a href="#Lightning" style="text-decoration: none; color:black;">
+                    <img src="./images/furniture img/metal.jpg" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Metal
+                    </font>
+                </a>
+            </div>
+            <div class="IconDiv ">
+                <a href="#Gift Shop" style="text-decoration: none; color:black;">
+                    <img src="./images/furniture img/bamboo img.jpg" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Bamboo
+                    </font>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
     <div class="TableLampContainer">
         <br/>
         <h1 class="TableLampContainer-heading">Dinner Set</h1>
