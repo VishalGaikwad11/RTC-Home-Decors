@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/Index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>furnitute</title>
     <!--css added-->
 
@@ -70,10 +72,7 @@
         .main-container {
             display: flex;
             flex-direction: row;
-            justify-content: start;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
+            justify-content: space-evenly;
             gap: 35px;
             padding-top: 30px;
             margin-left: 0px;
@@ -82,10 +81,7 @@
         .main-container-1 {
             display: flex;
             flex-direction: row;
-            justify-content: start;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
+            justify-content: space-evenly;
             gap: 35px;
             padding-top: 30px;
             margin-left: 0px;
@@ -94,7 +90,7 @@
         .TableLampContainer-heading {
             background-color: burlywood;
             color: white;
-            height: 40px;
+            height: 70px;
             width: 150px;
             border-radius: 10px;
             text-align: center;
@@ -110,14 +106,108 @@
         .product-quantity {
             font-weight: bold;
         }
+        
+        .IconText {
+            margin-left: 30px;
+            font-weight: 600;
+            font-size: 15px;
+        }
     </style>
 </head>
 
 <body>
     <!--navbar-->
+    <div class="NavBody">
+        <nav class="navbar navbar-expand-lg NavBG">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Homepage IMG/HDlogo (1).png" width="150" height="60" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse NavItem" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="furniture.html">Furniture</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="kitchen.html">Kitchen</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="lightning1.html">Lightning</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="gift.html">Gift Shop</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="signup.html">Signup</a>
+                        </li>
+                        <li class="nav-item NavName">
+                            <a class="nav-link active" href="contact .html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
 
 
-    <!--nav end-->
+        <!--nav end-->
+        <div class="Icons ">
+            <div class="IconDiv">
+                <a href="#cardrow" style="text-decoration: none; color:black;">
+                    <img src="./images/Homepage IMG/ShopAll.png" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Shop All
+                    </font>
+                </a>
+
+            </div>
+
+            <div class="IconDiv ">
+                <a href="#Furniture" style="text-decoration: none; color:black;">
+                    <img src="./images/Homepage IMG/furniture.avif" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Wooden
+                    </font>
+                </a>
+            </div>
+
+            <div class="IconDiv  ">
+                <a href="#kitchen" style="text-decoration: none; color:black;">
+                    <img src="./images/Homepage IMG/kitchen.jpg" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Glass
+                    </font>
+                </a>
+            </div>
+
+            <div class="IconDiv ">
+                <a href="#Lightning" style="text-decoration: none; color:black;">
+                    <img src="./images/Homepage IMG/Lightning.png" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Metal
+                    </font>
+                </a>
+            </div>
+            <div class="IconDiv ">
+                <a href="#Gift Shop" style="text-decoration: none; color:black;">
+                    <img src="./images/Homepage IMG/GIFTS SHOP.jpg" alt="ShopAll" class="IconIMG">
+                    <font class="IconText">
+                        Bamboo
+                    </font>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="TableLampContainer">
         <br/>
         <h1 class="TableLampContainer-heading">Wooden Furniture</h1>
@@ -136,7 +226,7 @@
                 <button class="product-cart-add-to-cart-btn">Add to cart</button>
             </div>
             <div class="product-cart-container">
-                <img src="" class="product-cart-header-img" />
+                <img src="./images/furniture img/w1.webp" class="product-cart-header-img" />
 
                 <h2 class="product-cart-title">Scalloped Glass Shade</h2>
                 <div class="product-cart-quantity-container">
@@ -150,7 +240,7 @@
             </div>
 
             <div class="product-cart-container">
-                <img src="" class="product-cart-header-img" />
+                <img src="./images/furniture img/w2.jpeg" class="product-cart-header-img" />
 
                 <h2 class="product-cart-title">Daylesfored Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -164,7 +254,7 @@
             </div>
 
             <div class="product-cart-container">
-                <img src="" class="product-cart-header-img" />
+                <img src="./images/furniture img/w3.jpeg" class="product-cart-header-img" />
 
                 <h2 class="product-cart-title">Straffordshire Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -179,7 +269,7 @@
         </div>
         <div class="main-container">
             <div class="product-cart-container">
-                <img src="" class="product-cart-header-img" />
+                <img src="./images/furniture img/w4.webp" class="product-cart-header-img" />
 
                 <h2 class="product-cart-title">Blath Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -192,7 +282,7 @@
                 <button class="product-cart-add-to-cart-btn">Add to cart</button>
             </div>
             <div class="product-cart-container">
-                <img src="" class="product-cart-header-img" />
+                <img src="./images/furniture img/w6.webp" class="product-cart-header-img" />
 
                 <h2 class="product-cart-title"> Ceramic Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -220,7 +310,7 @@
             </div>
 
             <div class="product-cart-container">
-                <img src="" class="product-cart-header-img" />
+                <img src="./images/furniture img/w7.jpg" class="product-cart-header-img" />
 
                 <h2 class="product-cart-title">Buffet Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -253,7 +343,7 @@
 
 
                 <div class="product-cart-container">
-                    <img src="" class="product-cart-header-img" />
+                    <img src="./images/furniture img/G1.jpg" class="product-cart-header-img" />
 
                     <h2 class="product-cart-title">Geometric Pendant Lightt</h2>
                     <div class="product-cart-quantity-container">
@@ -266,7 +356,7 @@
                     <button class="product-cart-add-to-cart-btn">Add to cart</button>
                 </div>
                 <div class="product-cart-container">
-                    <img src=" " class="product-cart-header-img" />
+                    <img src="./images/furniture img/G2.jpg " class="product-cart-header-img" />
 
                     <h2 class="product-cart-title">Bolden Hanging Light</h2>
                     <div class="product-cart-quantity-container">
@@ -280,7 +370,7 @@
                 </div>
 
                 <div class="product-cart-container">
-                    <img src="" class="product-cart-header-img" />
+                    <img src="./images/furniture img/G3.jpg" class="product-cart-header-img" />
 
                     <h2 class="product-cart-title"> Chandelier (Remote Control)</h2>
                     <div class="product-cart-quantity-container">
@@ -295,7 +385,7 @@
             </div>
             <div class="main-container-1">
                 <div class="product-cart-container">
-                    <img src="" class="product-cart-header-img" />
+                    <img src="./images/furniture img/G4.jpg" class="product-cart-header-img" />
 
                     <h2 class="product-cart-title">'Maria Theresa' </h2>
                     <div class="product-cart-quantity-container">
@@ -310,7 +400,7 @@
 
 
                 <div class="product-cart-container">
-                    <img src="" class="product-cart-header-img" />
+                    <img src="./images/furniture img/G5.jpg" class="product-cart-header-img" />
 
                     <h2 class="product-cart-title">'Lambeth' 7-Light Chandelier</h2>
                     <div class="product-cart-quantity-container">
@@ -323,7 +413,7 @@
                     <button class="product-cart-add-to-cart-btn">Add to cart</button>
                 </div>
                 <div class="product-cart-container">
-                    <img src="" class="product-cart-header-img" />
+                    <img src="./images/furniture img/G6.jpg" class="product-cart-header-img" />
 
                     <h2 class="product-cart-title"> Crystal Branch Chandelier </h2>
                     <div class="product-cart-quantity-container">
@@ -337,7 +427,7 @@
                 </div>
 
                 <div class="product-cart-container">
-                    <img src="" class="product-cart-header-img" />
+                    <img src="./images/furniture img/G7.jpg" class="product-cart-header-img" />
 
                     <h2 class="product-cart-title"> Tiffany Ceiling Light</h2>
                     <div class="product-cart-quantity-container">
@@ -371,7 +461,7 @@
                     </div>
 
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m1.jpg" class="product-cart-header-img" />
 
                         <h2 class="product-cart-title"> Birds Floor Lamp </h2>
                         <div class="product-cart-quantity-container">
@@ -384,7 +474,7 @@
                         <button class="product-cart-add-to-cart-btn">Add to cart</button>
                     </div>
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m2.jpg" class="product-cart-header-img" />
                         <h2 class="product-cart-title">Giselle Floor Lamp </h2>
                         <div class="product-cart-quantity-container">
                             <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
@@ -397,7 +487,7 @@
                     </div>
 
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m3.jpg" class="product-cart-header-img" />
                         <h2 class="product-cart-title">Cloud - Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
                             <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
@@ -412,7 +502,7 @@
                 <div class="main-container-1">
 
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m4.jpg" class="product-cart-header-img" />
 
                         <h2 class="product-cart-title">Globe Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -426,7 +516,7 @@
                     </div>
 
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m6.jpg" class="product-cart-header-img" />
 
                         <h2 class="product-cart-title">Tree Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -439,7 +529,7 @@
                         <button class="product-cart-add-to-cart-btn">Add to cart</button>
                     </div>
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m7.jpg" class="product-cart-header-img" />
 
 
 
@@ -455,7 +545,7 @@
                     </div>
 
                     <div class="product-cart-container">
-                        <img src="" class="product-cart-header-img" />
+                        <img src="./images/furniture img/m5.jpg" class="product-cart-header-img" />
 
                         <h2 class="product-cart-title">Flower Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -488,7 +578,7 @@
                         </div>
 
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B1.jpg" class="product-cart-header-img" />
 
                             <h2 class="product-cart-title"> Violin - Wall Light </h2>
                             <div class="product-cart-quantity-container">
@@ -501,7 +591,7 @@
                             <button class="product-cart-add-to-cart-btn">Add to cart</button>
                         </div>
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B2.jpg" class="product-cart-header-img" />
                             <h2 class="product-cart-title">Butterfly Wall Light</h2>
                             <div class="product-cart-quantity-container">
                                 <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
@@ -514,7 +604,7 @@
                         </div>
 
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B3.jpg" class="product-cart-header-img" />
                             <h2 class="product-cart-title">Ambient Wall Sconce</h2>
                             <div class="product-cart-quantity-container">
                                 <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
@@ -529,7 +619,7 @@
                     <div class="main-container-1">
 
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B4.jpg" class="product-cart-header-img" />
 
                             <h2 class="product-cart-title">Guitarist Wall Sconce</h2>
                             <div class="product-cart-quantity-container">
@@ -543,7 +633,7 @@
                         </div>
 
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B4.jpg" class="product-cart-header-img" />
 
                             <h2 class="product-cart-title">Swing Arm Sconce</h2>
                             <div class="product-cart-quantity-container">
@@ -556,7 +646,7 @@
                             <button class="product-cart-add-to-cart-btn">Add to cart</button>
                         </div>
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B5.jpg" class="product-cart-header-img" />
 
                             <h2 class="product-cart-title">Ambient Wall Sconce</h2>
                             <div class="product-cart-quantity-container">
@@ -570,7 +660,7 @@
                         </div>
 
                         <div class="product-cart-container">
-                            <img src="" class="product-cart-header-img" />
+                            <img src="./images/furniture img/B7.jpg" class="product-cart-header-img" />
 
                             <h2 class="product-cart-title">Raiden Wall Sconce </h2>
                             <div class="product-cart-quantity-container">
