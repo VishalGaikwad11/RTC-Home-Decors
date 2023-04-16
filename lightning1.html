@@ -2,115 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product cart</title>
-    <!--css added-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product cart</title>
+  <!--css added-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/Index.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!--Style -->
+  <style>
+    .product-cart-container {
+      border: 1px solid gray;
+      background-color:white;
+      display: block;
+      margin: 10px 10px;
+      border-radius: 15px;
+      margin-top: 8%;
 
-    <!--Style -->
-    <style>
-        .product-cart-container {
-            border: 1px solid gray;
-            background-color: white;
-            display: block;
-            margin: 10px 10px;
-            border-radius: 15px;
-        }
-        
-        body {
-            background-color: antiquewhite;
-        }
-        
-        .product-cart-title {
-            text-align: center;
-            font-size: 10px;
-        }
-        
-        .product-cart-add-to-cart-btn {
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-            border: 1px solid black;
-            padding: 3px 6px;
-            background-color: #843495;
-            color: white;
-        }
-        
-        .product-cart-quantity-container {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .product-cart-quantity-btn {
-            border-radius: 50%;
-            height: 25px;
-            width: 25px;
-            background-color: #843495;
-            border: none;
-            color: white;
-            padding: 3px;
-            margin: auto;
-        }
-        
-        .product-cart-header-img {
-            display: block;
-            width: 250px;
-            height: 250px;
-            margin: 10px;
-            border-radius: 20px;
-            box-shadow: 0 0 3px 2px gray;
-        }
-        
-        .product-cart-title {
-            text-align: center;
-            font-size: 15px;
-        }
-        
-        .main-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            gap: 35px;
-            padding-top: 30px;
-            margin-left: 0px;
-        }
-        
-        .main-container-1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            gap: 35px;
-            padding-top: 30px;
-            margin-left: 0px;
-        }
-        
-        .TableLampContainer-heading {
-            background-color: burlywood;
-            color: white;
-            height: 40px;
-            width: 150px;
-            border-radius: 10px;
-            text-align: center;
-            padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 22px;
-        }
-        
-        .price {
-            text-align: center;
-        }
-        
-        .product-quantity {
-            font-weight: bold;
-        }
-    </style>
+
+    }
+
+
+    body {
+      background-color: #fff;
+    }
+
+    .product-cart-title {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .product-cart-add-to-cart-btn {
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+      border: 1px solid rgb(27, 25, 25);
+      padding: 3px 6px;
+      background-color: black;
+      color: #efe1d6;
+      width: 130px;
+      text-decoration: none;
+
+    }
+
+    .product-cart-quantity-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .product-cart-quantity-btn {
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      background-color: #e9d0af;
+      border: none;
+      color:  black;
+      font-weight: bold;
+      padding: 3px;
+      margin: auto;
+ 
+    }
+
+    .product-cart-header-img {
+      display: block;
+      width: 250px;
+      height: 250px;
+      margin: 10px;
+      border-radius: 20px;
+      box-shadow: 0 0 3px 2px gray;
+      transition: all .5s ease-in;
+
+ 
+    }
+
+    .product-cart-title {
+      text-align: center;
+      font-size: 15px;
+      font-weight: lighter;
+      font-size: large;
+    }
+ 
+    
+    .main-container-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 35px;
+      padding-top: 30px;
+      margin-left: 0px;
+      background-color:  #faebeb;
+      width: fit-content;
+    }
+
+    .TableLampContainer-heading {
+      background-color: burlywood;
+      color: white;
+      height: 40px;
+      width: 150px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+
+    }
+
+    .price {
+      text-align: center;
+      font-size:medium;
+      font-weight:  bold;
+      color: black;
+    }
+    .link
+    {
+      text-decoration: none;
+    }
+
+    .product-quantity {
+      font-weight: bold;
+      font-size: small;
+
+    }
+    .product-cart-header-img:hover{
+      transform: scale(1.1);
+
+    }
+  </style>
 </head>
 
 <body>
@@ -118,39 +139,47 @@
 
 
     <!--nav end-->
-    <div class="TableLampContainer">
-        <br/>
-        <h1 class="TableLampContainer-heading">Table Lamps</h1>
-        <!--First contaier-->
-        <div class="main-container">
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0846_1000x.jpg?v=1678605817" class="product-cart-header-img" />
 
-                <h2 class="product-cart-title"> Crystal Table Lamp</h2>
-                <div class="product-cart-quantity-container">
-                    <button class="product-cart-quantity-btn" onclick="dec()">-</button>
-                    <span id="product-quantity" class="product-quantity">1</span>
-                    <button class="product-cart-quantity-btn" onclick="inc()">+</button>
-                </div>
-                <h4 class="price">₹ 16,500.00 </h4>
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
+     <!--First contaier-->
+ <div class="TableLampContainer">
+    <div>
+    <h2 id="Lightning" style="text-align: left; font-family: 'Times New Roman', Times, serif; margin-bottom: 25px; margin-top: 50px; margin-left: 50px;">Table Lamp
+        <img src="https://cdn-icons-png.flaticon.com/512/9378/9378048.png" height="40px" >
+    </h2>
+  </div> 
+    <div class="main-container-1">
+        <div class="product-cart-container shadow">
+            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0846_1000x.jpg?v=1678605817" class="product-cart-header-img mb-4" />
+    
+            <h2 class="product-cart-title">  Crystal Table Lamp</h2>
+            <div class="product-cart-quantity-container">
+                <button class="product-cart-quantity-btn" onclick="dec()">-</button>
+                <span id="product-quantity" class="product-quantity">1</span>
+                <button class="product-cart-quantity-btn" onclick="inc()">+</button>
             </div>
-            <div class="product-cart-container">
-                <img src=" https://cdn.shopify.com/s/files/1/0962/2574/products/009A4010_1000x.jpg?v=1678605314" class="product-cart-header-img" />
-
-                <h2 class="product-cart-title">Scalloped Glass Shade</h2>
-                <div class="product-cart-quantity-container">
-                    <button class="product-cart-quantity-btn" onclick=" dec1()">-</button>
-                    <span id="product-quantity-1" class="product-quantity">1</span>
-                    <button class="product-cart-quantity-btn" onclick="inc1()">+</button>
-                </div>
-                <h4 class="price">₹ 9,800.00</h4>
-
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
+            <h4 class="price">₹ 16,500.00            </h4>
+            <a  href="./payment.html" class="link">
+              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+        </div>
+        <div class="product-cart-container shadow">
+            <img src=" https://cdn.shopify.com/s/files/1/0962/2574/products/009A4010_1000x.jpg?v=1678605314" class="product-cart-header-img mb-4"/>
+    
+            <h2 class="product-cart-title">Scalloped Glass Shade</h2>
+            <div class="product-cart-quantity-container">
+                <button class="product-cart-quantity-btn" onclick=" dec1()">-</button>
+                <span id="product-quantity-1" class="product-quantity">1</span>
+                <button class="product-cart-quantity-btn" onclick="inc1()">+</button>
             </div>
+            <h4 class="price">₹ 9,800.00</h4>
 
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A0356_8c2fb7e2-4eb4-4a52-8c68-cff1b19ca3a1.jpg?v=1680953832&height=640" class="product-cart-header-img" />
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+                      </div>
+
+            <div class="product-cart-container shadow">
+                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A0356_8c2fb7e2-4eb4-4a52-8c68-cff1b19ca3a1.jpg?v=1680953832&height=640" class="product-cart-header-img mb-4" />
 
                 <h2 class="product-cart-title">Daylesfored Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -160,11 +189,13 @@
                 </div>
                 <h4 class="price">₹ 22,500.00 </h4>
 
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
-            </div>
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+                </div>
 
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A2548_1000x.jpg?v=1680974768" class="product-cart-header-img" />
+            <div class="product-cart-container shadow">
+                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A2548_1000x.jpg?v=1680974768" class="product-cart-header-img mb-4" />
 
                 <h2 class="product-cart-title">Straffordshire Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -174,12 +205,14 @@
                 </div>
                 <h4 class="price">₹ 12,500.00 </h4>
 
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
-            </div>
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+                </div>
         </div>
-        <div class="main-container">
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A7143_1000x.jpg?v=1680953816" class="product-cart-header-img" />
+        <div class="main-container-1">
+            <div class="product-cart-container shadow">
+                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A7143_1000x.jpg?v=1680953816" class="product-cart-header-img mb-4" />
 
                 <h2 class="product-cart-title">Blath Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -189,10 +222,12 @@
                 </div>
                 <h4 class="price">₹ 10,500.00 </h4>
 
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
-            </div>
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_0059_9d2e3812-a35e-45c0-97ad-a2d16c2bda95.jpg?v=1680954294&height=640" class="product-cart-header-img" />
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+                </div>
+            <div class="product-cart-container shadow">
+                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/DSC_0059_9d2e3812-a35e-45c0-97ad-a2d16c2bda95.jpg?v=1680954294&height=640" class="product-cart-header-img mb-4" />
 
                 <h2 class="product-cart-title"> Ceramic Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -202,11 +237,13 @@
                 </div>
                 <h4 class="price">₹ 16,500.00 </h4>
 
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a>  
             </div>
 
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4096.jpg?v=1678605490&height=640" class="product-cart-header-img" />
+            <div class="product-cart-container shadow">
+                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4096.jpg?v=1678605490&height=640" class="product-cart-header-img mb-4" />
 
                 <h2 class="product-cart-title">Blossom - Tiffany Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -216,11 +253,13 @@
                 </div>
                 <h4 class="price">₹ 22,500.00</h4>
 
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
-            </div>
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+                </div>
 
-            <div class="product-cart-container">
-                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_1972_980x.jpg?v=1680953563" class="product-cart-header-img" />
+            <div class="product-cart-container shadow">
+                <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_1972_980x.jpg?v=1680953563" class="product-cart-header-img mb-4" />
 
                 <h2 class="product-cart-title">Buffet Table Lamp</h2>
                 <div class="product-cart-quantity-container">
@@ -230,15 +269,21 @@
                 </div>
                 <h4 class="price">₹ 18,500.00 </h4>
 
-                <button class="product-cart-add-to-cart-btn">Add to cart</button>
-            </div>
+            <a  href="./payment.html" class="link">
+                  <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+              </div>
         </div>
         <!--Second Container-->
-        <div class="TableLampContainer">
-            <h1 class="TableLampContainer-heading">Ceiling lights</h1>
-            <div class="main-container-1">
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/bu-1_410x.jpg?v=1673089582" class="product-cart-header-img" />
+        <div class="TableLampContainer shadow">
+            <div>
+          <h2 id="Lightning" style="text-align: left; font-family: 'Times New Roman', Times, serif; margin-bottom: 25px; margin-top: 50px; margin-left: 50px;">Table Lamp
+              <img src="https://cdn-icons-png.flaticon.com/512/9378/9378048.png" height="40px" >
+          </h2>
+        </div>
+             <div class="main-container-1">
+                <div class="product-cart-container shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/bu-1_410x.jpg?v=1673089582" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title">Butterfly Glass Pendant Light </h2>
                     <div class="product-cart-quantity-container">
@@ -248,25 +293,29 @@
                     </div>
                     <h4 class="price">₹ 12,500.00 </h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
+            <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+            </a> 
+                  </div>
 
 
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A5061.jpg?v=1673088093&height=640" class="product-cart-header-img" />
+      <div class="product-cart-container shadow">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A5061.jpg?v=1673088093&height=640" class="product-cart-header-img mb-4"/>
+  
+          <h2 class="product-cart-title">Geometric Pendant Lightt</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec9()">-</button>
+              <span id="product-quantity-9" class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc9()">+</button>
+          </div>
+          <h4 class="price">₹ 7,650.00          </h4>
 
-                    <h2 class="product-cart-title">Geometric Pendant Lightt</h2>
-                    <div class="product-cart-quantity-container">
-                        <button class="product-cart-quantity-btn" onclick="dec9()">-</button>
-                        <span id="product-quantity-9" class="product-quantity">1</span>
-                        <button class="product-cart-quantity-btn" onclick="inc9()">+</button>
-                    </div>
-                    <h4 class="price">₹ 7,650.00 </h4>
-
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
-                <div class="product-cart-container">
-                    <img src=" https://cdn.shopify.com/s/files/1/0962/2574/products/009A8648_1000x.jpg?v=1677237175" class="product-cart-header-img" />
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                  </div>
+                <div class="product-cart-container shadow">
+                    <img src=" https://cdn.shopify.com/s/files/1/0962/2574/products/009A8648_1000x.jpg?v=1677237175" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title">Bolden Hanging Light</h2>
                     <div class="product-cart-quantity-container">
@@ -276,11 +325,13 @@
                     </div>
                     <h4 class="price">₹ 22,500.00 </h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                  </div>
 
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/36_3c0d8412-fc35-4371-99df-37a7d4a90b21_640x.jpg?v=1670493888" class="product-cart-header-img" />
+                <div class="product-cart-container shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/36_3c0d8412-fc35-4371-99df-37a7d4a90b21_640x.jpg?v=1670493888" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title"> Chandelier (Remote Control)</h2>
                     <div class="product-cart-quantity-container">
@@ -290,12 +341,14 @@
                     </div>
                     <h4 class="price">₹ 24,500.00</h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
                 </div>
             </div>
             <div class="main-container-1">
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9091_598fbdeb-99b4-4716-bf3b-dfd4892d8dfc_1000x.jpg?v=1677587799" class="product-cart-header-img" />
+                <div class="product-cart-container shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9091_598fbdeb-99b4-4716-bf3b-dfd4892d8dfc_1000x.jpg?v=1677587799" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title">'Maria Theresa' </h2>
                     <div class="product-cart-quantity-container">
@@ -305,12 +358,14 @@
                     </div>
                     <h4 class="price">₹ 28,500.00 </h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                    </div>
 
 
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9103_9415bb38-fe02-4197-b4dc-f5cafb35957e_1000x.jpg?v=1677586924" class="product-cart-header-img" />
+                <div class="product-cart-container shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9103_9415bb38-fe02-4197-b4dc-f5cafb35957e_1000x.jpg?v=1677586924" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title">'Lambeth' 7-Light Chandelier</h2>
                     <div class="product-cart-quantity-container">
@@ -320,10 +375,12 @@
                     </div>
                     <h4 class="price">₹ 18,500.00</h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A1677_1000x.jpg?v=1680692323" class="product-cart-header-img" />
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                    </div>
+                <div class="product-cart-container  shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A1677_1000x.jpg?v=1680692323" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title"> Crystal Branch Chandelier </h2>
                     <div class="product-cart-quantity-container">
@@ -333,11 +390,13 @@
                     </div>
                     <h4 class="price">₹ 44,500.00</h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                    </div>
 
-                <div class="product-cart-container">
-                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A8217_1000x.jpg?v=1675604088" class="product-cart-header-img" />
+                <div class="product-cart-container shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A8217_1000x.jpg?v=1675604088" class="product-cart-header-img mb-4" />
 
                     <h2 class="product-cart-title"> Tiffany Ceiling Light</h2>
                     <div class="product-cart-quantity-container">
@@ -347,17 +406,24 @@
                     </div>
                     <h4 class="price">₹ 22,500.00</h4>
 
-                    <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                </div>
+          <a  href="./payment.html" class="link">
+                      <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+        
+                  </div>
             </div>
             <!--Third Container-->
 
             <div class="TableLampContainer">
-                <h1 class="TableLampContainer-heading">Floor Lamp</h1>
-                <div class="main-container-1">
+    <div>
+                  <h2 id="Lightning" style="text-align: left; font-family: 'Times New Roman', Times, serif; margin-bottom: 25px; margin-top: 50px; margin-left: 50px;">Floor Lamp
+          <img src="https://cdn-icons-png.flaticon.com/512/9378/9378048.png" height="40px" >
+      </h2>
+    </div>
+                 <div class="main-container-1">
 
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/122_e59935ba-1302-413d-82ab-60d94d63d77a_1000x.jpg?v=1668153980" class="product-cart-header-img" />
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/122_e59935ba-1302-413d-82ab-60d94d63d77a_1000x.jpg?v=1668153980" class="product-cart-header-img mb-4" />
 
                         <h2 class="product-cart-title">Typha Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -367,11 +433,13 @@
                         </div>
                         <h4 class="price">₹ 16,500.00</h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                    </div>
+          <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                        </div>
 
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/1_6e0a24b3-d05c-4dc0-b38d-0fefb7203847_480x.jpg?v=1676015503" class="product-cart-header-img" />
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/1_6e0a24b3-d05c-4dc0-b38d-0fefb7203847_480x.jpg?v=1676015503" class="product-cart-header-img mb-4" />
 
                         <h2 class="product-cart-title"> Birds Floor Lamp </h2>
                         <div class="product-cart-quantity-container">
@@ -381,10 +449,12 @@
                         </div>
                         <h4 class="price">₹ 18,500.00</h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                    </div>
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0950_1000x.jpg?v=1671088963" class="product-cart-header-img" />
+          <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                        </div>
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/IMG_0950_1000x.jpg?v=1671088963" class="product-cart-header-img mb-4" />
                         <h2 class="product-cart-title">Giselle Floor Lamp </h2>
                         <div class="product-cart-quantity-container">
                             <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
@@ -393,11 +463,13 @@
                         </div>
                         <h4 class="price">₹ 14,500.00 </h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
+        <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
                     </div>
 
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9467-2_880x.jpg?v=1680954575" class="product-cart-header-img" />
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9467-2_880x.jpg?v=1680954575" class="product-cart-header-img mb-4" />
                         <h2 class="product-cart-title">Cloud - Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
                             <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
@@ -406,13 +478,15 @@
                         </div>
                         <h4 class="price">₹ 16,500.00</h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                    </div>
+        <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
+                  </div>
                 </div>
                 <div class="main-container-1">
 
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A5407_1000x.jpg?v=1664020299" class="product-cart-header-img" />
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A5407_1000x.jpg?v=1664020299" class="product-cart-header-img mb-4" />
 
                         <h2 class="product-cart-title">Globe Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -422,11 +496,13 @@
                         </div>
                         <h4 class="price">₹ 32,500.00</h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                    </div>
+          <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                        </div>
 
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9435_6420abff-7ab5-45ff-b1b4-fcdfb57e4095_1000x.jpg?v=1680944482" class="product-cart-header-img" />
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9435_6420abff-7ab5-45ff-b1b4-fcdfb57e4095_1000x.jpg?v=1680944482" class="product-cart-header-img mb-4" />
 
                         <h2 class="product-cart-title">Tree Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -436,10 +512,12 @@
                         </div>
                         <h4 class="price">₹ 24,500.00</h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                    </div>
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/1_7738a3f7-ac46-453e-9bf9-bb1565b7aa2e_1000x.jpg?v=1673076317" class="product-cart-header-img" />
+          <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                        </div>
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/1_7738a3f7-ac46-453e-9bf9-bb1565b7aa2e_1000x.jpg?v=1673076317" class="product-cart-header-img mb-4" />
 
 
 
@@ -451,11 +529,13 @@
                         </div>
                         <h4 class="price">₹ 96,000.00 </h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                    </div>
+        <a  href="./payment.html" class="link">
+          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
+      </div>
 
-                    <div class="product-cart-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9426_69801283-3817-4311-b426-9384c7c15286_1000x.jpg?v=1680954404" class="product-cart-header-img" />
+                    <div class="product-cart-container shadow">
+                        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9426_69801283-3817-4311-b426-9384c7c15286_1000x.jpg?v=1680954404" class="product-cart-header-img mb-4" />
 
                         <h2 class="product-cart-title">Flower Floor Lamp</h2>
                         <div class="product-cart-quantity-container">
@@ -465,31 +545,39 @@
                         </div>
                         <h4 class="price">₹ 32,500.00</h4>
 
-                        <button class="product-cart-add-to-cart-btn">Add to cart</button>
+        <a  href="./payment.html" class="link">
+                          <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
                     </div>
                 </div>
                 <!--Fourth Container-->
 
-                <div class="TableLampContainer">
-                    <h1 class="TableLampContainer-heading">Wall Sconces </h1>
-                    <div class="main-container-1">
+  <div class="TableLampContainer">
+    <div>
+      <h2 id="Lightning" style="text-align: left; font-family: 'Times New Roman', Times, serif; margin-bottom: 25px; margin-top: 50px; margin-left: 50px;">Wall Sconces
+          <img src="https://cdn-icons-png.flaticon.com/512/9378/9378048.png" height="40px" >
+      </h2>
+    </div>
+        <div class="main-container-1"> 
+  
+      <div class="product-cart-container shadow">
+          <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/22_5afb0169-4089-49e3-82fa-a199c4771eb8_1000x.jpg?v=1675854816" class="product-cart-header-img mb-4"/>
+  
+          <h2 class="product-cart-title">Bird Wall Sconces</h2>
+          <div class="product-cart-quantity-container">
+              <button class="product-cart-quantity-btn" onclick="dec16()">-</button>
+              <span id="product-quantity-16" class="product-quantity">1</span>
+              <button class="product-cart-quantity-btn" onclick="inc16()">+</button>
+          </div>
+          <h4 class="price">₹ 7,850.00  </h4>
 
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/22_5afb0169-4089-49e3-82fa-a199c4771eb8_1000x.jpg?v=1675854816" class="product-cart-header-img" />
+          <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                          </div>
 
-                            <h2 class="product-cart-title">Bird Wall Sconces</h2>
-                            <div class="product-cart-quantity-container">
-                                <button class="product-cart-quantity-btn" onclick="dec16()">-</button>
-                                <span id="product-quantity-16" class="product-quantity">1</span>
-                                <button class="product-cart-quantity-btn" onclick="inc16()">+</button>
-                            </div>
-                            <h4 class="price">₹ 7,850.00 </h4>
-
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                        </div>
-
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/MG_2092_39c509d3-0f55-42b6-b332-cf50747ab89d_1000x.jpg?v=1676294131" class="product-cart-header-img" />
+                        <div class="product-cart-container shadow">
+                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/MG_2092_39c509d3-0f55-42b6-b332-cf50747ab89d_1000x.jpg?v=1676294131" class="product-cart-header-img mb-4" />
 
                             <h2 class="product-cart-title"> Violin - Wall Light </h2>
                             <div class="product-cart-quantity-container">
@@ -499,10 +587,12 @@
                             </div>
                             <h4 class="price">₹ 9,600.00</h4>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                        </div>
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/11_a681f91b-90de-42fd-9b81-645a8306e011_720x.jpg?v=1671799293" class="product-cart-header-img" />
+          <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                            </div>
+                        <div class="product-cart-container shadow">
+                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/11_a681f91b-90de-42fd-9b81-645a8306e011_720x.jpg?v=1671799293" class="product-cart-header-img mb-4" />
                             <h2 class="product-cart-title">Butterfly Wall Light</h2>
                             <div class="product-cart-quantity-container">
                                 <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
@@ -511,11 +601,13 @@
                             </div>
                             <h4 class="price">₹ 4,850.0 </h4>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
+        <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
                         </div>
 
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4255_6e5bfd73-9147-44cc-9603-83dd10a716fe.jpg?v=1672832458&height=640" class="product-cart-header-img" />
+                        <div class="product-cart-container shadow">
+                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4255_6e5bfd73-9147-44cc-9603-83dd10a716fe.jpg?v=1672832458&height=640" class="product-cart-header-img mb-4" />
                             <h2 class="product-cart-title">Ambient Wall Sconce</h2>
                             <div class="product-cart-quantity-container">
                                 <button class="product-cart-quantity-btn" onclick="dec19()">-</button>
@@ -524,13 +616,15 @@
                             </div>
                             <h4 class="price">₹ 5,600.00 </h4>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
+        <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
                         </div>
                     </div>
                     <div class="main-container-1">
 
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/cf1050df-45ad-44f7-8298-29cbfad81d74_1000x.jpg?v=1676036328" class="product-cart-header-img" />
+                        <div class="product-cart-container shadow">
+                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/cf1050df-45ad-44f7-8298-29cbfad81d74_1000x.jpg?v=1676036328" class="product-cart-header-img mb-4" />
 
                             <h2 class="product-cart-title">Guitarist Wall Sconce</h2>
                             <div class="product-cart-quantity-container">
@@ -540,11 +634,13 @@
                             </div>
                             <h4 class="price">₹ 7,800.00 </h4>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                        </div>
+          <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+          </a> 
+                            </div>
 
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4689_03b945b3-ad50-435d-b2da-e0c9d066134b_1000x.jpg?v=1671711630" class="product-cart-header-img" />
+                        <div class="product-cart-container shadow">
+                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A4689_03b945b3-ad50-435d-b2da-e0c9d066134b_1000x.jpg?v=1671711630" class="product-cart-header-img mb-4" />
 
                             <h2 class="product-cart-title">Swing Arm Sconce</h2>
                             <div class="product-cart-quantity-container">
@@ -554,24 +650,26 @@
                             </div>
                             <h4 class="price">₹ 2,850.00</h4>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                        </div>
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9499_2_1000x.jpg?v=1681203931" class="product-cart-header-img" />
+          <button class="product-cart-add-to-cart-btn">Add to cart</button>
+      </div>
+      <div class="product-cart-container">
+        <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9499_2_1000x.jpg?v=1681203931" class="product-cart-header-img"/>
+       
+        <h2 class="product-cart-title">Ambient Wall Sconce</h2>
+        <div class="product-cart-quantity-container">
+          <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
+          <span id="product-quantity-18" class="product-quantity">1</span>
+          <button class="product-cart-quantity-btn" onclick="inc18()">+</button>
+        </div>
+        <h4 class="price">₹ 2,800.00</h4>
 
-                            <h2 class="product-cart-title">Ambient Wall Sconce</h2>
-                            <div class="product-cart-quantity-container">
-                                <button class="product-cart-quantity-btn" onclick="dec18()">-</button>
-                                <span id="product-quantity-18" class="product-quantity">1</span>
-                                <button class="product-cart-quantity-btn" onclick="inc18()">+</button>
-                            </div>
-                            <h4 class="price">₹ 2,800.00</h4>
+        <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
+                          </div>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
-                        </div>
-
-                        <div class="product-cart-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9557_1000x.jpg?v=1681206608" class="product-cart-header-img" />
+                        <div class="product-cart-container shadow">
+                            <img src="https://cdn.shopify.com/s/files/1/0962/2574/products/009A9557_1000x.jpg?v=1681206608" class="product-cart-header-img mb-4 " />
 
                             <h2 class="product-cart-title">Raiden Wall Sconce </h2>
                             <div class="product-cart-quantity-container">
@@ -581,7 +679,9 @@
                             </div>
                             <h4 class="price">₹ 2,450.00</h4>
 
-                            <button class="product-cart-add-to-cart-btn">Add to cart</button>
+        <a  href="./payment.html" class="link">
+                              <button class="product-cart-add-to-cart-btn">Buy Now</button>
+        </a> 
                         </div>
                     </div>
 
