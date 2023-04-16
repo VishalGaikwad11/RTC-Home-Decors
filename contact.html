@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>About Us Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+        .{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .section{
+         width:100%;
+         min-height: 100vh;
+         background-color: #ddd;
+        }
+        .container{
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .content-section{
+            float: left;
+            width: 55%;
+        }
+        .image-section{
+            float: right;
+            width: 40%;
+        }
+        .image-section img{
+            width: 100%;
+            height: 350px;
+        }
+        .content-section .title{
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+        .content-section .content h3{
+            margin-top: 20px;
+            color: #5d5d5d;
+            font-size: 21px;
+        }
+        .content-section .content p{
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .content-section .content .button{
+            margin-top: 30px;
+        }
+        .content-section .content .button a{
+            background-color: #3d3d3d;
+            padding: 12px 40px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            letter-spacing: 1.5px;
+        }
+        .content-section .content .button a:hover{
+            background-color: #a52a2a;
+            color: #fff;
+        }
+        .content-section .social{
+            margin-top: 40px;
+        }
+        .content-section .social img{
+            padding: 0px 10px;
+        }
+        .content-section .social img:hover{
+            color: #a52a2a;
+        }
+        @media screen and (max-width: 768px){
+            .container{
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding-top: 50px;
+            }
+            .content-section{
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            .image-section{
+                float: none;
+                width: 100%;
+            }
+            .image-section img{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+            .content-section .title{
+                text-align: center;
+                font-size: 19px;
+            }
+            .content-section .content .button{
+                text-align: center;
+            }
+            .content-section .content .button a{
+                padding: 9px 30px;
+            }
+            .content-section .social{
+                text-align: center;
+            }
+        }
+</style>
+</head>
+<body> 
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                        <h1>About us</h1>
+                </div>
+                <div class="content">
+                        <h3>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡 
+                        </h3>
+                        <p>Our work constantly revolves around the excellence of classic elegance and contemporary style,
+                           and around a sophisticated search of materials to ensure we bring forth personalised elegant ‘treasures’.
+                           Not swayed by fleeting trends, TDK offers a timeless range of products that have luxury as a value and durability as a fundamental requirement. 
+                           We aim to build one of the most customer-centric home decor brand, with a strong omni-channel presence across India.
+                        </p>
+                        <div class="button">
+                           <a href="">Read More</a>
+                        </div>
+                </div>
+                <div class="social">
+                    <img src= "images/facebook.png" height= "40px"/>
+                    <img src= "images/instagram.png" height= "40px"/>
+                    <img src= "images/twitter.png" height= "40px"/><br/>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="images/decore.jpg">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Send us message form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+    .{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+}
+body,input,textarea,a{
+    font-family: 'Roboto', sans-serif;
+}
+#selection-wrapper{
+
+    width: 100%;
+    padding: 10px;
+
+}
+.box-wrapper{
+    position: relative;
+    display: table;
+    width: 1250px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 40px;
+}
+.info-wrap{
+    width: 35%;
+    height: 750px;
+    padding: 10px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background:white;
+    color:#fff;
+    margin-left: 52px;
+}
+.info-title{
+   text-align: left;
+   font-size: 20px black;
+   letter-spacing: 0.5px;
+
+}
+.info-sub-title{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+    letter-spacing: 0.5px ;
+    line-height: 26px;
+    
+}
+.h3{
+    color: black;
+   
+}
+.info-details{
+    list-style: none;
+    margin: 60px 0px;
+    text-align: center;
+}
+.info-details li{
+    margin-top: 25px;
+    font-size: 18px;
+    color:black;
+}
+.info-details li a{
+    color:black;
+    text-decoration: none;
+}
+.info-details li a:hover{
+    color:blue;
+}
+.t{
+    border-left: 5px solid #6e6e6e;
+    height: 400px;
+    position: absolute;
+    left: 38%;
+    margin-left: 3px;
+    top: 750px;
+    align-items: center;
+
+   
+    
+
+}
+.form-wrap{
+    width: 52%;
+    float: right;
+    padding:35px 25px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background:white;
+    margin-top: 26px;
+    margin-right: 120px;
+}
+.form-title{
+    color:black;
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+.form-fields{
+    display: table;
+    width: 96%;
+    padding: 15px 5px 5px 5px;
+    margin-top: 10px;
+}
+.form-fields input{
+    font-size: 16px black;
+    padding:15px 10px;
+    width: 100%;
+    border-radius:5px;
+    
+}
+.form-group{
+    width: 96%;
+    padding:10px 0;
+    border-radius: 25px;
+    box-shadow:4px 5px 7px rgb(190, 198, 199);
+}
+.form-fields .form-group:last-child{
+    width: 96%;
+}   
+.submit-button{
+    border-radius: 5px;
+    margin: 50px 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    color:black;
+    text-align: center;
+    background-color: lightcoral;
+    transition: .5s;
+}
+.submit-button:hover{
+    background:rgb(118, 134, 144);
+}
+
+@media screen and (max-width:900px){
+          .box-wrapper{
+           text-align: center;
+          } 
+         }
+         @media screen and (max-width:768px)
+          {
+            .form-wrap{
+                padding: 10px;
+            }
+          }
+         
+</style>
+</head>
+<body>
+
+    <section id="section-wrapper">
+    <div class="box=wrapper">
+         <div class="info-wrap">
+           <ul class="info-details">
+            <li>
+                <img src= "images/maps-and-flags.png" height= "40px"/><br/>
+                <span>Address: </span> <br/><br/>
+                <a href="375/12,Anand samatanagar,308">365/12,Anand <br/>samatanagar,305</a>
+                </li>
+                <li>
+                    <img src= "images/phone-call.png" height= "40px"/><br/>
+                    <span>Phone: </span> <br/><br/>
+                    <a href="tel:+91-1234567897">+91-1234567897</a><br/>
+                    <br/><a href="tel:+91-8954367893">+91-8954367893</a>
+                </li>
+                <li>
+                    <img src= "images/email.png" height= "40px"/><br/>
+                    <span>Email: </span><br/><br/>
+                    <a href="rtchomedecors@gmail.com">rtchomedecors@gmail.com</a><br>
+                    <br/><a href="info.rtchomedecors@gmail.com">info.rtchomedecors@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+            <div class="t"></div>
+       
+        <div class="form-wrap">
+            <form action="#" method="POST">
+                <h2 class="form-title">Send us a message</h2>
+                <h3 class="info-sub-title">If you have any doubt regarding the plants fill the following information😊
+                    <br/> YOU CAN'T BUY HAPPINESS BUT YOU CAN BUY PLANTS AND THATS PRETTY MUCH THE SAME THING🌱 
+                    </h3>
+                <div class="form-fields">
+                    <div class="form-group">
+                        <input type="text" class="Enter your name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="Enter your email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="phone" placeholder="Enter your contact-number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter your doubt">
+                    </div>
+                </div>
+                <input type="submit" value="Send Now" class="submit-button">
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+<br>
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Team section</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <style>
+     
+         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400,700;900&display=swap');
+         .{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+         }
+         .team-section{
+            width: 100%;
+         }
+         .team-section .container{
+            width: 80%;
+            margin: auto;
+         }
+         .team-section .container .row{
+            width: 60%;
+            margin: auto;
+           
+         }
+         .team-section .container .row .title{
+            text-align: center;
+            margin-top: 10px;
+         }
+         .team-section .container .row .title h1{
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #eb6234;
+         }
+         .team-section .container .row .title p{
+            font-size: 18px;
+            font-family: sans-serif;
+            margin: 30px 0px;
+            color: #5d5d5d;
+            margin-bottom: auto;
+         }
+         .team-section .container .team-card{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 40px;
+            margin-top: 50px;
+           
+         }
+         .team-section .container .team-card .card{
+            width: 100%;
+            background-color:silver;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            cursor: pointer;
+         }
+         .team-section .container .team-card .card:hover{
+            background-color: #f3f3f3;
+            transition: 0.3s;
+         }
+         .team-section .container .team-card .card .image-section img{
+            height: 150px;
+            display: block;
+            width: 150px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+         }
+         .team-section .container .team-card .card .content{
+            width: 100%;
+            text-align: center;
+         }
+         .team-section .container .team-card .card .content h3{
+            font-size: 27px;
+            margin-top:10px;
+            letter-spacing: 1.5px;
+            color:royalblue;
+         }
+         .team-section .container .team-card .card .content h4{
+            font-size: 17px;
+            margin-top: 10px;
+            letter-spacing: 1.5px;
+            color:#3d3d3d;
+         }
+         .team-section .container .team-card .card .content p{
+            font-size: 15px;
+            margin: 16px 0px;
+            line-height: 1.5;
+            color: #6c6c6c;
+         }
+         @media screen and (max-width:900px){
+          .team-section .container .team-card{
+            grid-template-columns: repeat(2,1fr);
+          } 
+         }
+         @media screen and (max-width:768px){
+          .team-section .container .team-card{
+            grid-template-columns: 1fr;
+          } 
+         }
+         
+    </style>
+   </head>
+    <body>
+        <div class="team-section">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h1>Our Team</h1>
+                        <p>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡 </p>
+                    </div>
+                 </div>
+                 <div class="team-card">
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="images/vishal.jpeg">
+                       </div>
+                       <div class="content">
+                        <h3>Vishal</h3>
+                        <h4>web developer</h4>
+                        <p>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="images/vaishnavi.jpeg">
+                       </div>
+                       <div class="content">
+                        <h3>Vaishnavi</h3>
+                        <h4>web developer</h4>
+                        <p>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="images/neha.jpg">
+                       </div>
+                       <div class="content">
+                        <h3>Neha </h3>
+                        <h4>web developer</h4>
+                        <p>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="images/rajnandini.jpg">
+                       </div>
+                       <div class="content">
+                        <h3>Rajnandini</h3>
+                        <h4>CSE 3rd Year</h4>
+                        <p>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="images/samiksha.JPG">
+                       </div>
+                       <div class="content">
+                        <h3>Samiksha </h3>
+                        <h4>CSE 3rd Year</h4>
+                        <p>Our mission at The Decor Kart has always been to surprise and delight you with unexpected, distinctive finds for your home.🏡</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
